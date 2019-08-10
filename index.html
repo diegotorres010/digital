@@ -16,6 +16,18 @@
             display: flex;
             flex-direction: column;
         }
+        .contenedor{
+            display: flex;
+            background-color: black;
+            text-align: center;
+            font-size: 15px;
+            flex-direction: row;
+            justify-content: space-around;
+            padding: 10px 0 12px;
+        }
+        #info-content{
+            color: #b2becd;
+        }
         .contenedor-titulo{
             display: flex;
             flex: 4;
@@ -33,57 +45,113 @@
             flex-wrap: wrap;
             background-color: aquamarine;
         }
-        .imagenes{
-            display: flex;
-            max-width: 300px;
-            height: 150px;
-            width: 100px;
-            margin: 10px;
+        .boton{
+            background-color: rgb(56, 109, 255);
+            color: white;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 16px;
+            padding: 5px 10px;
+            cursor: pointer;
         }
-        .imagen1{
+        .menu{
             display: flex;
-            flex: 2;
-        }
-        .imagen2{
-            display: flex;
-            flex: 1;
-        }
-        .imagen3{
-            display: flex;
-            flex: 1;
-        }
-        .imagen4{
-            display: flex;
-            flex: 1;
-        }
-        #menu{
-            display: flex;
-            flex: 2;
             flex-direction: row;
             justify-content: space-around;
-            background-color: bisque;
+            background-color: white;
         }
-        p{
-            color:blue;
+        .ul1{
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+            margin-left: 16px;
+            padding-top: 0px;
+            position: relative;
+            
+            
+        }
+        .ul2{
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+        }
+        .grafico{
+            width: 302px;
+            height: auto;
+            top: 180px;
+            right: -64px;
+            position: absolute;
+        }
+        .slider1{
+            max-width: 464px;
+            display: block;
+            margin-top: 56px;
+            position: relative;
+            z-index: 1;
+        }
+        .titulo1{
+            font-family: Eina,"Helvetica Neue",Helvetica,sans-serif;
+            font-size: 64px;
+            line-height: 64px;
+            color: #020814;
+            letter-spacing: -.04em;
+            margin-bottom: 7px;
+            font-weight: 700;
+            box-sizing: border-box;
+        }
+        #parrafo1{
+            font-size: 22px;
+            line-height: 37px;
+            color: rgba(91,112,139,.9);
+            letter-spacing: -.04em;
+            font-family: Inter,"Inter UI",Helvetica,Arial,sans-serif;
+        }
+        .boton2{
+            background: #4d8dff;
+    border-radius: 10px;
+    text-transform: uppercase;
+    margin-top: 12px;
+    font-size: 15px;
+    line-height: 21px;
+    padding: 16px 16px 12px;
+    letter-spacing: .08em;
         }
     </style>
 </head>
 <body>
-    <div class="contenedor-titulo">
-        <h1 class="titulo">Titulo principal</h1>
+    <div class="contenedor">
+        <img src="https://ionicframework.com/img/products/studio/studio-logo.svg">
+        <p id="info-content">The fastest and easiest way to create cross-platform apps, from a single tool.</p>
+        <a class="boton" href="">Learn More</a>
     </div>
-    <div id="menu">
-        <p>Inicio</p>
-        <a href="https://www.pexels.com/search/dogs/"><p>Temas</p></a>
-        <p>Profesores</p>
-        <p>Estudiantes</p>
+    <div class="menu">
+        <a href="">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M30.4327 9.05578L30.5633 9.36054C31.5211 11.4721 32 13.6925 32 16C32 24.8163 24.8163 32 16 32C7.18367 32 0 24.8163 0 16C0 7.18367 7.18367 0 16 0C18.5905 0 21.0503 0.609524 23.3143 1.7415L23.619 1.89388L23.3578 2.11156C22.7048 2.63401 22.2041 3.28707 21.8776 4.04898L21.7905 4.26667L21.5946 4.17959C19.8313 3.35238 17.9592 2.91701 16 2.91701C8.77279 2.91701 2.91701 8.77279 2.91701 16C2.91701 23.2272 8.77279 29.083 16 29.083C23.2272 29.083 29.083 23.2054 29.083 16C29.083 14.2803 28.7565 12.5823 28.0816 10.9932L27.9946 10.7755L28.2122 10.6884C28.9741 10.4054 29.6707 9.92653 30.215 9.31701L30.4327 9.05578ZM26.4707 9.36057C28.3102 9.36057 29.8014 7.8694 29.8014 6.02996C29.8014 4.19051 28.3102 2.69934 26.4707 2.69934C24.6313 2.69934 23.1401 4.19051 23.1401 6.02996C23.1401 7.8694 24.6313 9.36057 26.4707 9.36057ZM15.9999 8.70754C11.9727 8.70754 8.7074 11.9728 8.7074 16.0001C8.7074 20.0273 11.9727 23.2926 15.9999 23.2926C20.0271 23.2926 23.2924 20.0273 23.2924 16.0001C23.2924 11.9728 20.0271 8.70754 15.9999 8.70754Z" fill="currentColor"></path>
+            </svg>
+        </a>
+        <ul class="ul1">
+            <li>Platform</li>
+            <li>Developers</li>
+            <li>Resources</li>
+            <li>Pricing</li>
+            <li>Enterprise</li>
+            <li>Blog</li>
+        </ul>
+        <ul class="ul2">
+            <li>Support</li>
+            <li class="boton">Sign Up</li>
+        </ul>
     </div>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/DGbA_HRtcu0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <div class="contenedor-imagenes">
-        <img class="imagenes imagen1" src="https://images.pexels.com/photos/2339009/pexels-photo-2339009.jpeg?cs=srgb&dl=architecture-building-business-2339009.jpg&fm=jpg">
-        <img class="imagenes imagen2" src="https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg?cs=srgb&dl=audience-band-concert-1105666.jpg&fm=jpg">
-        <img class="imagenes imagen3" src="https://images.pexels.com/photos/1168764/pexels-photo-1168764.jpeg?cs=srgb&dl=clouds-coconut-trees-daytime-1168764.jpg&fm=jpg">
-        <img class="imagenes imagen4" src="https://images.pexels.com/photos/2343743/pexels-photo-2343743.jpeg?cs=srgb&dl=architectural-design-architecture-buildings-2343743.jpg&fm=jpg">
+    <div class="slider">
+        <div class="slider1">
+            <h1 class="titulo1">One codebase. Any platform.</h1>
+            <p id="parrafo1">
+                Built on standard web technology, Ionic helps teams build and ship 
+                beautiful cross-platform hybrid and Progressive Web Apps with ease.
+            </p>
+            <a href="/getting-started" class="boton2">Get Started <img src="/img/homepage/ico-cli.png" width="16"></a>
+        </div>
+        <img src="https://ionicframework.com/img/homepage/hero-img.png" class="grafico">
     </div>
-</body>
 </html>
